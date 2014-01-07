@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/demo.css"/>
+        <script type="text/javascript" src="js/jquery.1.10.2.js"></script>
+        <script type="text/javascript" src="js/jquery.onepagernav.js"></script>
+        <script>
+            $(document).ready(function(){
+                //resize each zone to match the height of the view port
+                $('.zone').each(function(){
+                    $(this).css('height',$(window).height());
+                });
+
+                //initiate one pager navigation plugin
+                $('nav').onepapernav();
+            });
+        </script>
+    </head>
+    <body>
+        <nav>
+            <a href="#red">RED</a>
+            <a href="#blue">BLUE</a>
+            <a href="#yellow">YELLOW</a>
+            <a href="#green">GREEN</a>
+        </nav>
+        <article>
+            <div id="red" class="zone"></div>
+            <div id="blue" class="zone"></div>
+            <div id="yellow" class="zone"></div>
+            <div id="green" class="zone"></div>
+        </article>
+    </body>
+</html>
