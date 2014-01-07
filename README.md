@@ -17,9 +17,9 @@ Options:
 --------
 
     $('nav').onepapernav({
-            trigger: "click",       //Event that triggers the scrolling. ie. mouseover. Default: click
+        trigger: "click",       //Event that triggers the scrolling. ie. mouseover. Default: click
         link: "a",              //Selector of the navgiation buttons. Default: 'a'
         activeClass:"active",   //Class injected to the button related to the section currently in the view port. Default: 'active'
         speed: 1000,            //Speed of the transition in milliseconds. Default: 1000
-        margintop: 100          //Top margin to prevent part of the section from hiding under the navigation. Default: Height of the containing element.
+        margintop: 100          //Top margin (in px) added to the top in order to prevent part of the section from hiding under the navigation. Default: Height of the containing element.
     });
